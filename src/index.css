@@ -1,0 +1,56 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hier wurden einige Anpassungen der Schriftgrößen vorgenommen, um das Aussehen der Startseite auf verschiedenen Geräten zu optimieren */
+
+/* Schriftgröße bis 576px */
+@media (max-width: 576px) {
+  .infoheading {
+    font-size: large;
+  }
+  .infotext {
+      font-size: medium;
+  }
+}
+
+/* Schriftgröße ab 576px */
+@media (min-width: 576px) {
+  .infoheading {
+      font-size: 4vw;
+    }
+    .infotext {
+        font-size: 3vw;
+    }
+}
+
+/* Schriftgröße ab 768px */
+@media (min-width: 768px) {
+  .infoheading {
+      font-size: 3vw;
+    }
+    .infotext {
+        font-size: 2vw;
+    }
+}
+
+/* Schriftgröße ab 992px */
+@media (min-width: 992px) {
+  .infoheading {
+      font-size: 2vw;
+    }
+    .infotext {
+        font-size: 1.5vw;
+    }
+}
