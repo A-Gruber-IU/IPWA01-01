@@ -16,26 +16,26 @@
 
     <!--Einbindung Bootstrap mit CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 
-    <!--Stylesheet einbinden-->
+    <!--Eigenes Stylesheet einbinden-->
     <link href="/src/index.css" rel="stylesheet" />
 
     <!--Favicon einbinden-->
-    <link rel="apple-touch-icon" sizes="180x180" href="public/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="public/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="public/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="public/images/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/public/favicon/site.webmanifest">
 </head>
 
 
 <body>
     <nav class="navbar sticky-top navbar-expand-lg bg-body-secondary shadow-sm">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/index.html">
                 <img src="/public/images/20240109_Martin.png" alt="Logo" class="img-fluid d-inline-flex"
                     style="max-height:32px; max-width:32px">
                 <strong>CaringCloak</strong>
@@ -63,11 +63,55 @@
             </div>
         </div>
     </nav>
-
     <!--Ende Navigationsleiste und Start Seiteninhalt-->
+
     <main class="d-flex flex-column min-vh-100">
-        <p>Inhalt</p>
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center my-4">Du möchtest uns etwas mitteilen?</h1>
+            </div>
+            <form method="post" action="/public/pages/kontakteingang.html">
+                <div class="row">
+                    <div class="col-12 col-sm-9 col-md-7 col-lg-5 col-xl-3 mb-3">
+                        <label for="vorname" class="form-label">Vorname</label>
+                        <input name="Vorname" type="text" class="form-control" id="vorname" placeholder="Max">
+                    </div>
+                    <div class="col-12 col-sm-9 col-md-7 col-lg-5 col-xl-3 mb-3">
+                        <label for="nachname" class="form-label">Nachname</label>
+                        <input name="Nachname" type="text" class="form-control" id="nachname" placeholder="Mustermann">
+                    </div>
+                </div>
+                <div class="col-6 mb-3">
+                    <label for="emailadressse" class="form-label">Email-Adresse</label>
+                    <input name="Email" type="email" class="form-control" id="emailadressse" placeholder="name@domain.com">
+                </div>
+                <div>
+                    <p>Worum geht es?</p>
+                    <select class="btn btn-outline-secondary mb-4" name="Themenauswahl" id="thema">
+                        <option value="Team">Ich will euer Team verstärken!</option>
+                        <option value="Kleiderspende">Ich habe eine Frage zu meiner Kleiderspende.</option>
+                        <option value="FrageCC">Ich habe eine Frage zu CaringCloak.</option>
+                        <option value="Sonstiges">Sonstiges</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="Nachricht" class="form-label">Deine Nachricht an uns:</label>
+                    <textarea name="Nachricht" type="text" class="form-control" id="Nachricht" rows="3"
+                        placeholder="Was willst du uns mitteilen?"></textarea>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary">Absenden!</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row justify-content-center">
+            <img src="/public/images/20240107_Logo_KleiderVerteiler_w.jpeg" class="img-fluid"
+                style="max-height:400px; max-width:400px" alt="Logo">
+        </div>
     </main>
+
     <!--Ende Seiteninhalt und Start Fußleiste-->
     <div class="container-fluid bg-body-secondary">
         <footer class="align-items-start pb-2 mt-auto">
