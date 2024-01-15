@@ -70,24 +70,25 @@
             <div class="row">
                 <h1 class="text-center my-4">Du möchtest uns etwas mitteilen?</h1>
             </div>
-            <form method="post" action="/public/pages/kontakteingang.html">
+            <form class="needs-validation" method="post" action="/public/pages/kontakteingang.html">
                 <div class="row">
                     <div class="col-12 col-sm-9 col-md-7 col-lg-5 col-xl-3 mb-3">
                         <label for="vorname" class="form-label">Vorname</label>
-                        <input name="Vorname" type="text" class="form-control" id="vorname" placeholder="Max">
+                        <input name="Vorname" type="text" class="form-control" id="vorname" placeholder="Max" required>
                     </div>
                     <div class="col-12 col-sm-9 col-md-7 col-lg-5 col-xl-3 mb-3">
                         <label for="nachname" class="form-label">Nachname</label>
-                        <input name="Nachname" type="text" class="form-control" id="nachname" placeholder="Mustermann">
+                        <input name="Nachname" type="text" class="form-control" id="nachname" placeholder="Mustermann" required>
                     </div>
                 </div>
                 <div class="col-6 mb-3">
                     <label for="emailadressse" class="form-label">Email-Adresse</label>
-                    <input name="Email" type="email" class="form-control" id="emailadressse" placeholder="name@domain.com">
+                    <input name="Email" type="email" class="form-control" id="emailadressse" placeholder="name@domain.com" required>
                 </div>
                 <div>
                     <p>Worum geht es?</p>
-                    <select class="btn btn-outline-secondary mb-4" name="Themenauswahl" id="thema">
+                    <select class="btn btn-outline-secondary mb-4" name="Themenauswahl" id="thema" required>
+                        <option selected disabled value="">Bitte wähle ein Thema...</option>
                         <option value="Team">Ich will euer Team verstärken!</option>
                         <option value="Kleiderspende">Ich habe eine Frage zu meiner Kleiderspende.</option>
                         <option value="FrageCC">Ich habe eine Frage zu CaringCloak.</option>
@@ -97,7 +98,7 @@
                 <div class="mb-3">
                     <label for="Nachricht" class="form-label">Deine Nachricht an uns:</label>
                     <textarea name="Nachricht" type="text" class="form-control" id="Nachricht" rows="3"
-                        placeholder="Was willst du uns mitteilen?"></textarea>
+                        placeholder="Was willst du uns mitteilen?" required></textarea>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-auto">
