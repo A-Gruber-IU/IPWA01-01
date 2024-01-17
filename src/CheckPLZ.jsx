@@ -72,25 +72,13 @@ export default function CheckPLZ({ plzIn, fehler, ortIn }) {
                         </FormLabel>
                         <div className="ms-1 mb-1">
                             <label className="ms-1">
-                                <input
-                                    className="mx-1"
-                                    type="radio"
-                                    id="abgabeX"
-                                    value="abgabeX"
-                                    checked={selectedValue === "abgabeX"}
-                                    onChange={() => handleRadioChange("abgabeX")} />
-                                Abgabe an der Geschäftstelle</label>
+                                Abgabe an der Geschäftstelle <input className="mx-1" type="radio" id="abgabeX" value="abgabeX" checked={selectedValue === "abgabeX"} onChange={() => handleRadioChange("abgabeX")} />
+                            </label>
                         </div>
                         <div className="ms-1 my-1">
                             <label className="ms-1">
-                                <input
-                                    className="mx-1"
-                                    type="radio"
-                                    id="abholungX"
-                                    value="abholungX"
-                                    checked={selectedValue === "abholungX"}
-                                    onChange={() => handleRadioChange("abholungX")} />
-                                Abholung</label>
+                                Abholung <input className="mx-1" type="radio" id="abholungX" value="abholungX" checked={selectedValue === "abholungX"} onChange={() => handleRadioChange("abholungX")} />
+                            </label>
                         </div>
                     </FormGroup>
                 </Col>
