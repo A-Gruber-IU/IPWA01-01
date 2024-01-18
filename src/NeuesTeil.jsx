@@ -2,6 +2,7 @@ import { Row, Col } from "react-bootstrap";
 import { useState } from "react";
 
 export default function NeuesTeil({ kleiderNr }) {
+    const [kleiderArt, setKleiderArt] = useState('');
     const [bezeichnung, setBezeichnung] = useState('');
 
     return (
@@ -10,8 +11,8 @@ export default function NeuesTeil({ kleiderNr }) {
             <Row>
                 <Col className="mx-auto mb-3">
                     <label>
-                        Art des Kleidungsstücks? &nbsp; <select className="btn text-black bg-secondary-subtle" name="auswahlKleiderArt" id={`kleiderArt${kleiderNr}`} defaultValue={"nichts"} required>
-                            <option disabled value="nichts">Bitte wähle die Art des Kleidungsstücks...</option>
+                        Art des Kleidungsstücks? &nbsp; <select className="btn text-black bg-secondary-subtle" name={`Auswahl_Kleiderart_${kleiderNr}`} id={`kleiderArt${kleiderNr}`} value={kleiderArt}  onChange={(e) => { setKleiderArt(e.target.value); }} required>
+                            <option disabled value="">Bitte wähle die Art des Kleidungsstücks...</option>
                             <option value="Hose">Hose</option>
                             <option value="Hemd">Hemd/Blouse</option>
                             <option value="Shirt">T-Shirt/Top</option>
@@ -24,7 +25,7 @@ export default function NeuesTeil({ kleiderNr }) {
                     </label>
                 </Col>
                 <Col className="align-self-center">
-                    <label>Bezeichnung : &nbsp;<input className="mb-2" id={`kleidungsBezeichnung${kleiderNr}`} value={bezeichnung} type="text" onChange={(e) => { setBezeichnung(e.target.value); }} /></label>
+                    <label>Bezeichnung : &nbsp;<input className="mb-2" id={`kleidungsBezeichnung${kleiderNr}`} name={`Kleidung_Bezeichnung_${kleiderNr}`} value={bezeichnung} type="text" required onChange={(e) => { setBezeichnung(e.target.value); }} /></label>
                 </Col>
             </Row>
         </>
