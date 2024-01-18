@@ -2,13 +2,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import { useState } from "react";
 import NeuesTeil from "./NeuesTeil";
 
-export default function Abholung({ plzIn, ortRe }) {
-    let plz = plzIn;
-    let ort = ortRe;
+export default function Abholung({ plz, ort, handleBestaetigung }) {
 
-    // Die Formulardaten werden mit useState kontrolliert, damit darauf in Abhängigkeit des State, also Echtzeit zugegriffen werden kann
-
-    const [form, setForm] = useState({
+    const [form, setForm] = useState({  // Die Formulardaten werden mit useState kontrolliert, damit darauf in Abhängigkeit des State, also Echtzeit zugegriffen werden kann
         vorname: '',
         nachname: '',
         strasse: '',
@@ -16,6 +12,7 @@ export default function Abholung({ plzIn, ortRe }) {
         datenschutz: '',
         gebiet: '',
     });
+
     // Funktionen zum Hinzufügen und entfernen eines neuen Kleidungsstücks. Die Kleidungsobjekte werden als Array geführt.
 
     const [kleiderArray, setKleiderArray] = useState([0]);
@@ -41,58 +38,45 @@ export default function Abholung({ plzIn, ortRe }) {
 
     async function handleSubmit(event) {
         event.preventDefault(); // verhindert Abschicken der Formulardaten mit normaler POST/GET-Funktion und Wechseln zur Ziel-URL
-        try {
-            const response = await fetch("/public/pages/registrierung.html", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(datenOut),
-            });
-            const result = await response.json();
-            console.log("Success:", result);
-        } catch (error) {
-            console.error("Error:", error);
+        const meinForm = document.getElementById("spendenReg");
+        const submitter = document.getElementById("submitBtn");
+        const formData = new FormData(meinForm, submitter);
+        if (!meinForm.checkValidity()) {
+            meinForm.reportValidity();      // Rückmeldung für Validierung an Browser
+        }
+        else {
+            let sendeDaten = { "Logistik": "Abholung" };
+            for (const [key, value] of formData) {
+                sendeDaten[key] = value;
+            }
+            try {
+                const response = await fetch("https://httpbin.org/post", {  // Testserver, der auf die Anfrage antwortet
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(sendeDaten)
+                });
+                if (response.status === 200) {
+                    const result = await response.json();
+                    console.log("Erfolg:", result);
+                    let bestaetigungsNachricht = [];
+                    for (const [key, value] of formData) {
+                        bestaetigungsNachricht = [...bestaetigungsNachricht, <p key={key}>{`${key}: ${value}`}</p>];
+                    }
+                    handleBestaetigung(bestaetigungsNachricht);
+                }
+            } catch (error) {
+                console.error("Fehler:", error);
+            }
         }
     }
 
-    // Funktion, die die Formulardaten zusammenstellt, damit diese zur Bestätigung ausgegeben und verschickt werden können.
-
-    function iteriereKleiderArray(event) {
-        event.preventDefault();
-        let datenOut = JSON.stringify(formularDaten);
-        console.log(datenOut);
-        for (let i = 0; i < kleiderArray.length; i++) {     // Für die variable Anzahl an Kleidungsstücken muss über das Array iteriert werden, um die Werte auszulesen
-            if (i < kleiderArray.length) {
-                console.log(document.getElementById(`kleidungsBezeichnung${i+1}, `).value);
-                console.log(document.getElementById(`kleiderArt${i+1}, `).value);
-            }
-          }
-        console.log(datenOut);
-        console.log(document.forms.Spenden_Registrierung);
-        console.log(document.getElementById("spendenReg"));
-        console.log(document.forms.Spenden_Registrierung.elements);
-        console.log(document.getElementById("spendenReg").elements);
-        console.log(document.getElementById("spendenReg").attributes);
-        console.log(document.getElementById("spendenReg")[1].getAttribute("value"));
-    }
-
-    const formularDaten = {
-        Logistik: "Abholung",
-        Vorname: form.vorname,
-        Nachname: form.nachname,
-        PLZ: plz,
-        Ort: ort,
-        Strasse_Nr: form.strasse,
-        Email: form.email,
-        Gebiet: form.gebiet,
-        Datenschutz: form.datenschutz,
-    }
 
     return (
         <Container className="pe-5">
             <h4 className="my-4">Sag uns bitte wo wir deine Kleider abholen dürfen.</h4>
-            <form name="Spenden_Registrierung" id="spendenReg" className="needs-validation" method="post" action="/public/pages/kontakteingang.html">
+            <form name="Spenden_Registrierung" id="spendenReg">
                 <Row>
                     <Col className="align-self-end">
                         <label>
@@ -118,16 +102,16 @@ export default function Abholung({ plzIn, ortRe }) {
                     </Col>
                     <Col className="align-self-end">
                         <label>
-                            Ort: &nbsp;<input className="mb-2" id="ortsangabe" name="Ortsangabe" value={ort} type="text" readOnly />
+                            Ort: &nbsp;<input className="mb-2" id="ortsangabe" name="Ort" value={ort} type="text" readOnly />
                         </label>
                     </Col>
                     <Col className="align-self-end">
-                        <label>Straße, Nr.: &nbsp;<input className="mb-2" id="strasseNr" name="Strasse_Nr" value={form.strasse} type="text" required onChange={(e) => { setForm({ ...form, strasse: e.target.value, }); }} />
+                        <label>Straße, Nr.: &nbsp;<input className="mb-2" id="strasseNr" name="Strasse und Nr" value={form.strasse} type="text" required onChange={(e) => { setForm({ ...form, strasse: e.target.value, }); }} />
                         </label>
                     </Col>
                     <Col className="my-1 align-self-end">
                         <label>
-                            Wo soll deine Spende hingehen? &nbsp; <select className="btn text-black bg-secondary-subtle" name="Auswahl_Krisengebiet" id="auswahlGebiet" value={form.gebiet} onChange={(e) => { setForm({ ...form, gebiet: e.target.value, }); }} required>
+                            Wo soll deine Spende hingehen? &nbsp; <select className="btn text-black bg-secondary-subtle" name="Auswahl Krisengebiet" id="auswahlGebiet" value={form.gebiet} onChange={(e) => { setForm({ ...form, gebiet: e.target.value, }); }} required>
                                 <option disabled value="">Bitte wähle ein Krisengebiet...</option>
                                 <option value="Jemen">Jemen</option>
                                 <option value="Lybien">Lybien</option>
@@ -151,11 +135,11 @@ export default function Abholung({ plzIn, ortRe }) {
                 </Row>
                 <Row>
                     <label className="my-3">
-                        Ich habe die <a href="/public/pages/datenschutz.html">Datenschutzhinweise</a> zur Kenntnis genommen und akzeptiert. &nbsp; 
+                        Ich habe die <a href="/public/pages/datenschutz.html">Datenschutzhinweise</a> zur Kenntnis genommen und akzeptiert. &nbsp;
                         <input type="checkbox" id="datenschutzEinwilligung" name="Datenschutzeinwilligung" onChange={(e) => { setForm({ ...form, datenschutz: e.target.value, }); }} required />
                     </label>
                     <div className="col-auto my-4">
-                        <button type="submit" className="btn btn-primary" >Absenden!</button>
+                        <button type="submit" id="submitBtn" className="btn btn-primary" onClick={handleSubmit}>Absenden!</button>
                     </div>
                 </Row>
             </form>

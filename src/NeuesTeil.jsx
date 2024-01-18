@@ -11,7 +11,7 @@ export default function NeuesTeil({ kleiderNr }) {
             <Row>
                 <Col className="mx-auto mb-3">
                     <label>
-                        Art des Kleidungsstücks? &nbsp; <select className="btn text-black bg-secondary-subtle" name={`Auswahl_Kleiderart_${kleiderNr}`} id={`kleiderArt${kleiderNr}`} value={kleiderArt}  onChange={(e) => { setKleiderArt(e.target.value); }} required>
+                        Art des Kleidungsstücks? &nbsp; <select className="btn text-black bg-secondary-subtle" name={`Auswahl Kleiderart ${kleiderNr}`} id={`kleiderArt${kleiderNr}`} value={kleiderArt}  onChange={(e) => { setKleiderArt(e.target.value); }} required>
                             <option disabled value="">Bitte wähle die Art des Kleidungsstücks...</option>
                             <option value="Hose">Hose</option>
                             <option value="Hemd">Hemd/Blouse</option>
@@ -25,7 +25,7 @@ export default function NeuesTeil({ kleiderNr }) {
                     </label>
                 </Col>
                 <Col className="align-self-center">
-                    <label>Bezeichnung : &nbsp;<input className="mb-2" id={`kleidungsBezeichnung${kleiderNr}`} name={`Kleidung_Bezeichnung_${kleiderNr}`} value={bezeichnung} type="text" required onChange={(e) => { setBezeichnung(e.target.value); }} /></label>
+                    <label>Bezeichnung : &nbsp;<input className="mb-2" id={`kleidungsBezeichnung${kleiderNr}`} name={`Kleidung Bezeichnung ${kleiderNr}`} value={bezeichnung} type="text" required onChange={(e) => { setBezeichnung(e.target.value); }} /></label>
                 </Col>
             </Row>
         </>

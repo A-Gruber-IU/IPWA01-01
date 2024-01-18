@@ -3,9 +3,7 @@ import { Row, Col, Card, FormGroup, FormLabel } from "react-bootstrap";
 import Abholung from "./Abholung";
 import Abgabe from "./Abgabe";
 
-export default function CheckPLZ({ plzIn, fehler, ortIn }) {
-    let plz = plzIn;
-    let ort = ortIn;
+export default function CheckPLZ({ plz, fehler, ort, handleBestaetigung }) {
 
     const [selectedValue, setSelectedValue,] = useState("abholungX");
     const handleRadioChange = (value) => { setSelectedValue(value); };
@@ -48,6 +46,7 @@ export default function CheckPLZ({ plzIn, fehler, ortIn }) {
                         </Card.Body>
                     </Card>
                 </Col>
+                <Abgabe plz={plz} handleBestaetigung={handleBestaetigung} />
             </>
         );
     }
@@ -83,7 +82,7 @@ export default function CheckPLZ({ plzIn, fehler, ortIn }) {
                     </FormGroup>
                 </Col>
                 <Col className="mx-3">
-                    {(selectedValue == "abholungX") ? <Abholung plzIn={plz} ortRe={ort} /> : <Abgabe plzIn={plz} />}
+                    {(selectedValue == "abholungX") ? <Abholung plz={plz} ort={ort} handleBestaetigung={handleBestaetigung} /> : <Abgabe plz={plz} handleBestaetigung={handleBestaetigung} />}
                 </Col>
             </>
         );
