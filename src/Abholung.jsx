@@ -4,7 +4,7 @@ import NeuesTeil from "./NeuesTeil";
 
 export default function Abholung({ plz, ort, handleBestaetigung }) {
 
-    const [form, setForm] = useState({  // Die Formulardaten werden mit useState kontrolliert, damit darauf in Abhängigkeit des State, also Echtzeit zugegriffen werden kann
+    const [form, setForm] = useState({  // Die Formulardaten werden mit useState kontrolliert, damit darauf in Abhängigkeit des Zustands zugegriffen werden kann
         vorname: '',
         nachname: '',
         strasse: '',
@@ -45,6 +45,7 @@ export default function Abholung({ plz, ort, handleBestaetigung }) {
             meinForm.reportValidity();      // Rückmeldung für Validierung an Browser
         }
         else {
+            // window.confirm("Sind deine Eingaben vollständig und möchtest du sie absenden?");         hier könnte man noch eine Bestätigung per Dialogbox abfragen
             let sendeDaten = { "Logistik": "Abholung" };
             for (const [key, value] of formData) {
                 sendeDaten[key] = value;
@@ -62,7 +63,7 @@ export default function Abholung({ plz, ort, handleBestaetigung }) {
                     console.log("Erfolg:", result);
                     let bestaetigungsNachricht = [];
                     for (const [key, value] of formData) {
-                        bestaetigungsNachricht = [...bestaetigungsNachricht, <p key={key}>{`${key}: ${value}`}</p>];
+                        bestaetigungsNachricht = [...bestaetigungsNachricht, <p key={key}><strong>{`${key}: `}</strong>{`${value}`}</p>];
                     }
                     handleBestaetigung(bestaetigungsNachricht);
                 }

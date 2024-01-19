@@ -46,7 +46,7 @@ export default function CheckPLZ({ plz, fehler, ort, handleBestaetigung }) {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Abgabe plz={plz} handleBestaetigung={handleBestaetigung} />
+                <Abgabe handleBestaetigung={handleBestaetigung} />
             </>
         );
     }
@@ -82,7 +82,7 @@ export default function CheckPLZ({ plz, fehler, ort, handleBestaetigung }) {
                     </FormGroup>
                 </Col>
                 <Col className="mx-3">
-                    {(selectedValue == "abholungX") ? <Abholung plz={plz} ort={ort} handleBestaetigung={handleBestaetigung} /> : <Abgabe plz={plz} handleBestaetigung={handleBestaetigung} />}
+                    {(selectedValue == "abholungX") ? <Abholung plz={plz} ort={ort} handleBestaetigung={handleBestaetigung} /> : <Abgabe handleBestaetigung={handleBestaetigung} />}
                 </Col>
             </>
         );
