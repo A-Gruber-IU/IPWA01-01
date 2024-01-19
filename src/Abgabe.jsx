@@ -120,7 +120,7 @@ export default function Abgabe({ handleBestaetigung }) {
                 </Row>
                 <Row>
                     <label className="my-3">
-                        Ich habe die <a href="/public/pages/datenschutz.html">Datenschutzhinweise</a> zur Kenntnis genommen und akzeptiert. &nbsp;
+                        Ich habe die <a href="/pages/datenschutz.html">Datenschutzhinweise</a> zur Kenntnis genommen und akzeptiert. &nbsp;
                         <input type="checkbox" id="datenschutzEinwilligung" name="Datenschutzeinwilligung" onChange={(e) => { setForm({ ...form, datenschutz: e.target.value, }); }} required />
                     </label>
                     <div className="col-auto my-4">

@@ -1,0 +1,1178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Andreas Gruber" />
+    <meta name="description"
+        content="CaringCloak bringt deine Kleider dahin wo sie gebraucht werden. Spende heute noch Kleider, die dir nicht mehr gefallen oder passen an Menschen, die sie dringend brauchen." />
+    <title>CaringCloak</title>
+
+    <!--Open Graph Data für Anzeige in Social Media und Verlinkungen-->
+    <meta property="og:image" content="/images/20240109_Martin.png" />
+    <meta property="og:description" content="CaringCloak bringt deine Kleider dahin wo sie gebraucht werden." />
+    <meta property="og:title" content="CaringCloak" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Einbindung Bootstrap mit CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!--Favicon einbinden-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+</head>
+
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-secondary shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/pages/startseite.html">
+                <img src="/images/20240109_Martin.png" alt="Logo" class="img-fluid d-inline-flex"
+                    style="max-height:32px; max-width:32px">
+                <strong>CaringCloak</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/startseite.html">Startseite</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/index.html">Registrierung</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Ende Navigationsleiste und Start Seiteninhalt-->
+
+    <main class="d-flex flex-column min-vh-100">
+        <div>
+            <header>
+                <div class="text-center text-bg-danger py-2">
+                    <h5>Das ist ein Studenprojekt zum Thema Programmierung von Webanwendungsoberflächen und keine echte Seite.</h5>
+                    <p>Die Registrierungsdaten werden zu Testzwecken an den Server "https://httpbin.org/post" übertragen. 
+                    <br>Bitte geben Sie keine echten Daten ein.</p>
+                </div>
+            </header>
+            <div class="container">
+                <h2 class="display-3 my-3">Datenschutzerklärung</h2>
+                <p>
+                    (Musterdatenschutzerklärung nach der DSGVO)
+                </p>
+                <p>
+                    I. Name und Anschrift des Verantwortlichen
+                </p>
+                <p>
+                    Der Verantwortliche im Sinne der Datenschutz-Grundverordnung und anderer nationaler
+                    Datenschutzgesetze
+                    der Mitgliedsstaaten sowie sonstiger datenschutzrechtlicher Bestimmungen ist die:
+                </p>
+                <p>
+                    Musterfirma
+                    Musterstraße 1
+                    12345 Musterstadt
+                    Deutschland
+                    Tel.: Telefonnummer
+                    E-Mail: muster@e-mail.de
+                    Website: www.musterwebsite.de
+                    II. Name und Anschrift des Datenschutzbeauftragten
+                    Der Datenschutzbeauftragte des Verantwortlichen ist:
+                </p>
+                <p>
+                    Max Mustermann
+                    Musterunternehmen (wenn extern)
+                    Musterstraße 1
+                    12345 Musterstadt
+                    Deutschland
+                    Tel.: Telefonnummer
+                    E-Mail: max.mustermann@e-mail.de
+                    Website: www.musterwebsite.de
+                </p>
+                <p>
+                    III. Allgemeines zur Datenverarbeitung
+                </p>
+                <p>
+                    1. Umfang der Verarbeitung personenbezogener Daten
+                </p>
+                <p>
+                    Wir verarbeiten personenbezogene Daten unserer Nutzer grundsätzlich nur, soweit dies zur
+                    Bereitstellung
+                    einer funktionsfähigen Website sowie unserer Inhalte und Leistungen erforderlich ist. Die
+                    Verarbeitung
+                    personenbezogener Daten unserer Nutzer erfolgt regelmäßig nur nach Einwilligung des Nutzers. Eine
+                    Ausnahme
+                    gilt in solchen Fällen, in denen eine vorherige Einholung einer Einwilligung aus tatsächlichen
+                    Gründen
+                    nicht
+                    möglich ist und die Verarbeitung der Daten durch gesetzliche Vorschriften gestattet ist.
+                </p>
+                <p>
+                    2. Rechtsgrundlage für die Verarbeitung personenbezogener Daten
+                </p>
+                <p>
+                    Soweit wir für Verarbeitungsvorgänge personenbezogener Daten eine Einwilligung der betroffenen
+                    Person
+                    einholen, dient Art. 6 Abs. 1 lit. a EU-Datenschutzgrundverordnung (DSGVO) als Rechtsgrundlage.
+
+                    Bei der Verarbeitung von personenbezogenen Daten, die zur Erfüllung eines Vertrages, dessen
+                    Vertragspartei
+                    die betroffene Person ist, erforderlich ist, dient Art. 6 Abs. 1 lit. b DSGVO als Rechtsgrundlage.
+                    Dies
+                    gilt
+                    auch für Verarbeitungsvorgänge, die zur Durchführung vorvertraglicher Maßnahmen erforderlich sind.
+
+                    Soweit eine Verarbeitung personenbezogener Daten zur Erfüllung einer rechtlichen Verpflichtung
+                    erforderlich
+                    ist, der unser Unternehmen unterliegt, dient Art. 6 Abs. 1 lit. c DSGVO als Rechtsgrundlage.
+
+                    Für den Fall, dass lebenswichtige Interessen der betroffenen Person oder einer anderen natürlichen
+                    Person
+                    eine Verarbeitung personenbezogener Daten erforderlich machen, dient Art. 6 Abs. 1 lit. d DSGVO als
+                    Rechtsgrundlage.
+
+                    Ist die Verarbeitung zur Wahrung eines berechtigten Interesses unseres Unternehmens oder eines
+                    Dritten
+                    erforderlich und überwiegen die Interessen, Grundrechte und Grundfreiheiten des Betroffenen das
+                    erstgenannte
+                    Interesse nicht, so dient Art. 6 Abs. 1 lit. f DSGVO als Rechtsgrundlage für die Verarbeitung.
+                </p>
+                <p>
+                    3. Datenlöschung und Speicherdauer
+                </p>
+                <p>
+                    Die personenbezogenen Daten der betroffenen Person werden gelöscht oder gesperrt, sobald der Zweck
+                    der
+                    Speicherung entfällt. Eine Speicherung kann darüber hinaus erfolgen, wenn dies durch den
+                    europäischen
+                    oder
+                    nationalen Gesetzgeber in unionsrechtlichen Verordnungen, Gesetzen oder sonstigen Vorschriften,
+                    denen
+                    der
+                    Verantwortliche unterliegt, vorgesehen wurde. Eine Sperrung oder Löschung der Daten erfolgt auch
+                    dann,
+                    wenn
+                    eine durch die genannten Normen vorgeschriebene Speicherfrist abläuft, es sei denn, dass eine
+                    Erforderlichkeit zur weiteren Speicherung der Daten für einen Vertragsabschluss oder eine
+                    Vertragserfüllung
+                    besteht.
+                </p>
+                <p>
+                    IV. Bereitstellung der Website und Erstellung von Logfiles
+                </p>
+                <p>
+                    1. Beschreibung und Umfang der Datenverarbeitung
+                </p>
+                <p>
+                    Bei jedem Aufruf unserer Internetseite erfasst unser System automatisiert Daten und Informationen
+                    vom
+                    Computersystem des aufrufenden Rechners.
+
+                    Folgende Daten werden hierbei erhoben:
+
+                    Dieser Teil ist entsprechend anzupassen. Nicht zutreffende Daten sind zu entfernen, fehlende zu
+                    ergänzen.
+                    (1) Informationen über den Browsertyp und die verwendete Version
+                    (2) Das Betriebssystem des Nutzers
+                    (3) Den Internet-Service-Provider des Nutzers
+                    (4) Die IP-Adresse des Nutzers
+                    (5) Datum und Uhrzeit des Zugriffs
+                    (6) Websites, von denen das System des Nutzers auf unsere Internetseite gelangt
+                    (7) Websites, die vom System des Nutzers über unsere Website aufgerufen werden
+                    Option 1: Die Logfiles enthalten IP-Adressen oder sonstige Daten, die eine Zuordnung zu einem Nutzer
+                    ermöglichen. Dies könnte beispielsweise der Fall sein, wenn der Link zur Website, von der der Nutzer
+                    auf
+                    die
+                    Internetseite gelangt, oder der Link zur Website, zu der der Nutzer wechselt, personenbezogene Daten
+                    enthält.
+
+                    Die Daten werden ebenfalls in den Logfiles unseres Systems gespeichert. Eine Speicherung dieser
+                    Daten
+                    zusammen mit anderen personenbezogenen Daten des Nutzers findet nicht statt.
+
+                    Option 2: Die Logfiles enthalten keine IP-Adressen oder sonstigen Daten, die eine Zuordnung zu einem
+                    Nutzer
+                    ermöglichen.
+
+                    Die Daten werden ebenfalls in den Logfiles unseres Systems gespeichert. Nicht hiervon betroffen sind
+                    die
+                    IP-Adressen des Nutzers oder andere Daten, die die Zuordnung der Daten zu einem Nutzer ermöglichen.
+                    Eine
+                    Speicherung dieser Daten zusammen mit anderen personenbezogenen Daten des Nutzers findet nicht
+                    statt.
+                </p>
+                <p>
+                    2. Rechtsgrundlage für die Datenverarbeitung
+                    Falls eine Speicherung von IP-Adressen in Logfiles erfolgt:
+
+                    Rechtsgrundlage für die vorübergehende Speicherung der Daten und der Logfiles ist Art. 6 Abs. 1 lit.
+                    f
+                    DSGVO.
+
+                    Falls keine Speicherung von IP-Adressen in Logfiles erfolgt:
+
+                    Rechtsgrundlage für die vorübergehende Speicherung der Daten ist Art. 6 Abs. 1 lit. f DSGVO.
+                </p>
+                <p>
+                    3. Zweck der Datenverarbeitung
+                </p>
+                <p>
+                    Die vorübergehende Speicherung der IP-Adresse durch das System ist notwendig, um eine Auslieferung
+                    der
+                    Website an den Rechner des Nutzers zu ermöglichen. Hierfür muss die IP-Adresse des Nutzers für die
+                    Dauer
+                    der
+                    Sitzung gespeichert bleiben.
+
+                    Falls eine Speicherung von IP-Adressen in Logfiles erfolgt:
+
+                    Die Speicherung in Logfiles erfolgt, um die Funktionsfähigkeit der Website sicherzustellen. Zudem
+                    dienen
+                    uns
+                    die Daten zur technischen Optimierung der Website und zur Sicherstellung der Sicherheit unserer
+                    informationstechnischen Systeme. Eine Auswertung der Daten zu Marketingzwecken findet in diesem
+                    Zusammenhang
+                    nicht statt.
+
+                    In diesen Zwecken liegt auch unser berechtigtes Interesse an der Datenverarbeitung nach Art. 6 Abs.
+                    1
+                    lit. f
+                    DSGVO.
+                </p>
+                <p>
+                    4. Dauer der Speicherung
+                    Die Daten werden gelöscht, sobald sie für die Erreichung des Zweckes ihrer Erhebung nicht mehr
+                    erforderlich
+                    sind. Im Falle der Erfassung der Daten zur Bereitstellung der Website ist dies der Fall, wenn die
+                    jeweilige
+                    Sitzung beendet ist.
+                </p>
+                <p>
+                    Falls eine Speicherung von IP-Adressen in Logfiles erfolgt:
+                </p>
+                <p>
+                    Im Falle der Speicherung der Daten in Logfiles ist dies nach spätestens sieben Tagen der Fall. Eine
+                    darüberhinausgehende Speicherung ist möglich. In diesem Fall werden die IP-Adressen der Nutzer
+                    gelöscht
+                    oder
+                    verfremdet, sodass eine Zuordnung des aufrufenden Clients nicht mehr möglich ist.
+                    5. Widerspruchs- und Beseitigungsmöglichkeit
+                    Die Erfassung der Daten zur Bereitstellung der Website und die Speicherung der Daten in Logfiles ist
+                    für
+                    den
+                    Betrieb der Internetseite zwingend erforderlich. Es besteht folglich seitens des Nutzers keine
+                    Widerspruchsmöglichkeit.
+                </p>
+                <p>
+                    V. Verwendung von Cookies
+                </p>
+                <p>
+                    1. Beschreibung und Umfang der Datenverarbeitung
+                </p>
+                <p>
+                    Unsere Webseite verwendet Cookies. Bei Cookies handelt es sich um Textdateien, die im
+                    Internetbrowser
+                    bzw.
+                    vom Internetbrowser auf dem Computersystem des Nutzers gespeichert werden. Ruft ein Nutzer eine
+                    Website
+                    auf,
+                    so kann ein Cookie auf dem Betriebssystem des Nutzers gespeichert werden. Dieser Cookie enthält eine
+                    charakteristische Zeichenfolge, die eine eindeutige Identifizierung des Browsers beim erneuten
+                    Aufrufen
+                    der
+                    Website ermöglicht.
+                    Falls eine Verwendung technisch notwendiger Cookies erfolgt:
+                    Wir setzen Cookies ein, um unsere Website funktionsfähig zu gestalten. Einige Elemente unserer
+                    Internetseite
+                    erfordern es, dass der aufrufende Browser auch nach einem Seitenwechsel identifiziert werden kann.
+                    In den Cookies werden dabei folgende Daten gespeichert und übermittelt:
+                    Es folgt eine Auflistung der gespeicherten Daten. Beispiele können sein:
+                    (1) Spracheinstellungen
+                    (2) Artikel in einem Warenkorb
+                    (3) Log-In-Informationen
+                    Falls zudem eine Verwendung technisch nicht notwendiger Cookies erfolgt:
+                    Wir verwenden auf unserer Website darüber hinaus Cookies, die eine Analyse des Surfverhaltens der
+                    Nutzer
+                    ermöglichen.
+                    Auf diese Weise können folgende Daten übermittelt werden:
+                    Es folgt eine Auflistung der erhobenen Daten. Diese können beispielsweise sein:
+                    (1) Eingegebene Suchbegriffe
+                    (2) Häufigkeit von Seitenaufrufen
+                    (3) Inanspruchnahme von Website-Funktionen
+                    § 25 Abs. 1 TTDSG schreibt vor, dass die Speicherung von Informationen in der Endeinrichtung des
+                    Endnutzers
+                    oder der Zugriff auf Informationen, die bereits in der Endeinrichtung gespeichert sind, nur zulässig
+                    sind,
+                    wenn der Endnutzer auf der Grundlage von klaren und umfassenden Informationen eingewilligt hat. Die
+                    Einwilligung hat nach Maßgabe der DSGVO zu erfolgen.
+                    Nach § 25 Abs. 2 TTDSG ist die Einwilligung in eng begrenzten Ausnahmefällen nicht erforderlich:
+                    1. Wenn der alleinige Zweck der Speicherung von Informationen in der Endeinrichtung des Endnutzers
+                    oder
+                    der
+                    alleinige Zweck des Zugriffs auf bereits in der Endeinrichtung des Endnutzers gespeicherte
+                    Informationen
+                    die
+                    Durchführung der Übertragung einer Nachricht über ein öffentliches Telekommunikationsnetz ist
+                    2. Wenn die Speicherung von Informationen in der Endeinrichtung des Endnutzers oder der Zugriff auf
+                    bereits
+                    in der Endeinrichtung des Endnutzers gespeicherte Informationen unbedingt erforderlich ist, damit
+                    der
+                    Anbieter eines Telemediendienstes einen vom Nutzer ausdrücklich gewünschten Telemediendienst zur
+                    Verfügung
+                    stellen kann
+                    Demnach sind technisch nicht notwendige Cookies zustimmungsbedürftig.
+                    Bei Aufruf unserer Website wird der Nutzer über die Verwendung von Cookies zu Analysezwecken
+                    informiert
+                    und
+                    seine Einwilligung zur Verarbeitung der in diesem Zusammenhang verwendeten personenbezogenen Daten
+                    eingeholt. In diesem Zusammenhang erfolgt auch ein Hinweis auf diese Datenschutzerklärung.
+                </p>
+                <p>
+                    2. Rechtsgrundlage für die Datenverarbeitung
+                </p>
+                <p>
+                    Falls nur eine Verwendung technisch notwendiger Cookies erfolgt oder eine Verwendung technisch
+                    notwendiger
+                    erfolgt:
+                    Die Rechtsgrundlage für die Verarbeitung personenbezogener Daten unter Verwendung von technisch
+                    erforderlichen Cookies i.S.d. § 25 Abs. 2 TTDSG ist Art. 6 Abs. 1 lit. f DSGVO.
+                    Falls eine Verwendung technisch notwendiger und nicht notwendiger Cookies mit vorheriger Einholung
+                    einer
+                    Einwilligung des Nutzers erfolgt:
+                    Die Rechtsgrundlage für die Verarbeitung personenbezogener Daten unter Verwendung von Cookies zu
+                    Analysezwecken ist bei Vorliegen einer diesbezüglichen Einwilligung des Nutzers Art. 6 Abs. 1 lit. a
+                    DSGVO.
+                    Die Rechtsgrundlage für die Verarbeitung personenbezogener Daten unter Verwendung technisch
+                    notwendiger
+                    Cookies ist andernfalls Art. 6 Abs. 1 lit. f DSGVO.
+                </p>
+                <p>
+                    3. Zweck der Datenverarbeitung
+                </p>
+                <p>
+                    Falls eine Verwendung technisch notwendiger Cookies erfolgt:
+                    Der Zweck der Verwendung technisch notwendiger Cookies ist, die Nutzung von Websites für die Nutzer
+                    zu
+                    ermöglichen. Einige Funktionen unserer Internetseite können ohne den Einsatz von Cookies nicht
+                    angeboten
+                    werden. Für diese ist es erforderlich, dass der Browser auch nach einem Seitenwechsel wiedererkannt
+                    wird.
+                    Für folgende Anwendungen benötigen wir Cookies:
+                    Es folgt eine Auflistung der Anwendungen. Beispiele können sein:
+                    (1) Warenkorb
+                    (2) Übernahme von Spracheinstellungen
+                    (3) Log-In-Informationen
+                    Die durch technisch notwendige Cookies erhobenen Nutzerdaten werden nicht zur Erstellung von
+                    Nutzerprofilen
+                    verwendet.
+                    Falls zudem eine Verwendung technisch nicht notwendiger Cookies erfolgt:
+                    Die Verwendung der Analyse-Cookies erfolgt zu dem Zweck, die Qualität unserer Website und ihre
+                    Inhalte
+                    zu
+                    verbessern. Durch die Analyse-Cookies erfahren wir, wie die Website genutzt wird und können so unser
+                    Angebot
+                    stetig optimieren.
+                    Der genaue Einsatzzweck der Analysecookies sollte an dieser Stelle genauer beschrieben werden.
+                    In diesen Zwecken liegt auch unser berechtigtes Interesse in der nachfolgenden Verarbeitung der
+                    personenbezogenen Daten nach Art. 6 Abs. 1 lit. f DSGVO.
+                </p>
+                <p>
+                    4. Dauer der Speicherung, Widerspruchs- und Beseitigungsmöglichkeit
+                </p>
+                <p>
+                    Cookies werden auf dem Rechner des Nutzers gespeichert und von diesem an unsere Seite übermittelt.
+                    Daher
+                    haben Sie als Nutzer auch die volle Kontrolle über die Verwendung von Cookies. Durch eine Änderung
+                    der
+                    Einstellungen in Ihrem Internetbrowser können Sie die Speicherung von Cookies deaktivieren oder
+                    einschränken. Bereits gespeicherte Cookies können jederzeit gelöscht werden. Dies kann auch
+                    automatisiert
+                    erfolgen. Werden Cookies für unsere Website deaktiviert, können möglicherweise nicht mehr alle
+                    Funktionen
+                    der Website vollumfänglich genutzt werden.
+                </p>
+                <p>
+                    VI. Newsletter
+                </p>
+                <p>
+                    1. Beschreibung und Umfang der Datenverarbeitung
+                </p>
+                <p>
+                    Der Newsletter-Versand erfolgt aufgrund der Anmeldung des Nutzers auf der Website:
+
+                    Auf unserer Internetseite besteht die Möglichkeit einen kostenfreien Newsletter zu abonnieren. Dabei
+                    werden
+                    bei der Anmeldung zum Newsletter die Daten aus der Eingabemaske an uns übermittelt.
+
+                    An dieser Stelle sollte eine konkrete Nennung der erhobenen Daten erfolgen. Im Minimalfall betrifft
+                    dies
+                    die
+                    E-Mail-Adresse des Nutzers.
+
+                    Zudem werden folgende Daten bei der Anmeldung erhoben:
+
+                    Es müssen die tatsächlich erhobenen weiteren Daten angegeben werden. Dies können beispielsweise
+                    sein:
+                    (1) IP-Adresse des aufrufenden Rechners
+                    (2) Datum und Uhrzeit der Registrierung
+                    Für die Verarbeitung der Daten wird im Rahmen des Anmeldevorgangs Ihre Einwilligung eingeholt und
+                    auf
+                    diese
+                    Datenschutzerklärung verwiesen.
+
+                    Der Newsletter-Versand erfolgt aufgrund des Verkaufs von Waren oder Dienstleistungen:
+
+                    Wenn Sie auf unserer Internetseite Waren oder Dienstleistungen erwerben und hierbei Ihre
+                    E-Mail-Adresse
+                    hinterlegen, kann diese in der Folge durch uns für den Versand eines Newsletters verwendet werden.
+                    In
+                    einem
+                    solchen Fall wird über den Newsletter ausschließlich Direktwerbung für eigene ähnliche Waren oder
+                    Dienstleistungen versendet.
+
+                    Es erfolgt im Zusammenhang mit der Datenverarbeitung für den Versand von Newslettern keine
+                    Weitergabe
+                    der
+                    Daten an Dritte. Die Daten werden ausschließlich für den Versand des Newsletters verwendet.
+                </p>
+                <p>
+                    2. Rechtsgrundlage für die Datenverarbeitung
+                </p>
+                <p>
+                    Der Newsletter-Versand erfolgt aufgrund der Anmeldung des Nutzers auf der Website:
+
+                    Rechtsgrundlage für die Verarbeitung der Daten nach Anmeldung zum Newsletters durch den Nutzer ist
+                    bei
+                    Vorliegen einer Einwilligung des Nutzers Art. 6 Abs. 1 lit. a DSGVO.
+
+                    Der Newsletter-Versand erfolgt aufgrund des Verkaufs von Waren oder Dienstleistungen:
+
+                    Rechtsgrundlage für den Versand des Newsletters infolge des Verkaufs von Waren oder Dienstleistungen
+                    ist
+                    Art. 6 Abs. 1 lit. f DSGVO.
+                </p>
+                <p>
+                    3. Zweck der Datenverarbeitung
+                </p>
+                <p>
+                    Die Erhebung der E-Mail-Adresse des Nutzers dient dazu, den Newsletter zuzustellen.
+
+                    Der Newsletter-Versand erfolgt aufgrund der Anmeldung des Nutzers auf der Website:
+
+                    Die Erhebung sonstiger personenbezogener Daten im Rahmen des Anmeldevorgangs dient dazu, einen
+                    Missbrauch
+                    der Dienste oder der verwendeten E-Mail-Adresse zu verhindern.
+                </p>
+                <p>
+                    4. Dauer der Speicherung
+                </p>
+                <p>
+                    Die Daten werden gelöscht, sobald sie für die Erreichung des Zweckes ihrer Erhebung nicht mehr
+                    erforderlich
+                    sind. Die E-Mail-Adresse des Nutzers wird demnach solange gespeichert, wie das Abonnement des
+                    Newsletters
+                    aktiv ist.
+
+                    Der Newsletter-Versand erfolgt aufgrund der Anmeldung des Nutzers auf der Website:
+
+                    Die sonstigen im Rahmen des Anmeldevorgangs erhobenen personenbezogenen Daten werden in der Regel
+                    nach
+                    einer
+                    Frist von sieben Tagen gelöscht.
+                    5. Widerspruchs- und Beseitigungsmöglichkeit
+                    Das Abonnement des Newsletters kann durch den betroffenen Nutzer jederzeit gekündigt werden. Zu
+                    diesem
+                    Zweck
+                    findet sich in jedem Newsletter ein entsprechender Link.
+
+                    Der Newsletter-Versand erfolgt aufgrund der Anmeldung des Nutzers auf der Website:
+
+                    Hierdurch wird ebenfalls ein Widerruf der Einwilligung der Speicherung der während des
+                    Anmeldevorgangs
+                    erhobenen personenbezogenen Daten ermöglicht.
+
+                    VII. Registrierung
+                </p>
+                <p>
+                    1. Beschreibung und Umfang der Datenverarbeitung
+                </p>
+                <p>
+                    Auf unserer Internetseite bieten wir Nutzern die Möglichkeit, sich unter Angabe personenbezogener
+                    Daten
+                    zu
+                    registrieren. Die Daten werden dabei in eine Eingabemaske eingegeben und an uns übermittelt und
+                    gespeichert.
+                    Eine Weitergabe der Daten an Dritte findet nicht statt. Folgende Daten werden im Rahmen des
+                    Registrierungsprozesses erhoben:
+
+                    An dieser Stelle sollten die entsprechenden Daten aufgelistet werden.
+
+                    Im Zeitpunkt der Registrierung werden zudem folgende Daten gespeichert:
+
+                    An dieser Stelle sind die Daten entsprechend aufzulisten. Beispiele können sein:
+                    (1) Die IP-Adresse des Nutzers
+                    (2) Datum und Uhrzeit der Registrierung
+                    Im Rahmen des Registrierungsprozesses wird eine Einwilligung des Nutzers zur Verarbeitung dieser
+                    Daten
+                    eingeholt.
+                </p>
+                <p>
+                    2. Rechtsgrundlage für die Datenverarbeitung
+                </p>
+                <p>
+                    Rechtsgrundlage für die Verarbeitung der Daten ist bei Vorliegen einer Einwilligung des Nutzers Art.
+                    6
+                    Abs.
+                    1 lit. a DSGVO.
+
+                    Wenn die Registrierung der Erfüllung eines Vertrages, dessen Vertragspartei die betroffene Person
+                    ist,
+                    oder
+                    der Durchführung vorvertraglicher Maßnahmen dient.
+
+                    Dient die Registrierung der Erfüllung eines Vertrages, dessen Vertragspartei der Nutzer ist oder der
+                    Durchführung vorvertraglicher Maßnahmen, so ist zusätzliche Rechtsgrundlage für die Verarbeitung der
+                    Daten
+                    Art. 6 Abs. 1 lit. b DSGVO.
+                </p>
+                <p>
+                    3. Zweck der Datenverarbeitung
+                </p>
+                <p>
+                    Die Registrierung dient nicht zum Abschluss eines Vertrages mit dem Nutzer:
+
+                    Eine Registrierung des Nutzers ist für das Bereithalten bestimmter Inhalte und Leistungen auf
+                    unserer
+                    Website erforderlich.
+
+                    Es folgt eine nähere Beschreibung der Inhalte und Leistungen. Warum ist im Einzelfall eine
+                    Identifikation
+                    des Nutzers für die Bereithaltung erforderlich?
+
+                    Die Registrierung dient zum Abschluss eines Vertrages mit dem Nutzer:
+
+                    Eine Registrierung des Nutzers ist zur Erfüllung eines Vertrages mit dem Nutzer oder zur
+                    Durchführung
+                    vorvertraglicher Maßnahmen erforderlich.
+
+                    Es folgt eine nähere Beschreibung des auf der Internetseite angebotenen Vertrages. Warum sind für
+                    diese
+                    Verträge die erhobenen Daten erforderlich?
+
+                    Sollte für die von Ihnen angebotenen Verträge eine Verarbeitung der personenbezogenen Daten des
+                    Vertragspartners bei Vertragsschluss gesetzlich vorgeschrieben sein, so sind die jeweiligen Normen,
+                    aus
+                    denen sich die Verpflichtung ergibt, zu nennen.
+                </p>
+                <p>
+                    4. Dauer der Speicherung
+                </p>
+                <p>
+                    Die Daten werden gelöscht, sobald sie für die Erreichung des Zweckes ihrer Erhebung nicht mehr
+                    erforderlich
+                    sind.
+
+                    Die Registrierung dient nicht zum Abschluss eines Vertrages mit dem Nutzer:
+
+                    Dies ist für die während des Registrierungsvorgangs erhobenen Daten der Fall, wenn die Registrierung
+                    auf
+                    unserer Internetseite aufgehoben oder abgeändert wird.
+
+                    Die Registrierung dient zum Abschluss eines Vertrages mit dem Nutzer:
+
+                    Dies ist für die während des Registrierungsvorgangs zur Erfüllung eines Vertrags oder zur
+                    Durchführung
+                    vorvertraglicher Maßnahmen dann der Fall, wenn die Daten für die Durchführung des Vertrages nicht
+                    mehr
+                    erforderlich sind. Auch nach Abschluss des Vertrags kann eine Erforderlichkeit, personenbezogene
+                    Daten
+                    des
+                    Vertragspartners zu speichern, bestehen, um vertraglichen oder gesetzlichen Verpflichtungen
+                    nachzukommen.
+
+                    Dauerschuldverhältnisse erfordern die Speicherung der personenbezogenen Daten während der
+                    Vertragslaufzeit.
+                    Zudem müssen Gewährleistungsfristen beachtet werden und die Speicherung von Daten für steuerliche
+                    Zwecke.
+                    Welche Speicherfristen hierbei einzuhalten sind, lässt sich nicht pauschal festlegen, sondern muss
+                    für
+                    die
+                    jeweils geschlossenen Verträge und Vertragsparteien im Einzelfall ermittelt werden.
+                </p>
+                <p>
+                    5. Widerspruchs- und Beseitigungsmöglichkeit
+                </p>
+                <p>
+                    Als Nutzer haben sie jederzeit die Möglichkeit, die Registrierung aufzulösen. Die über Sie
+                    gespeicherten
+                    Daten können Sie jederzeit abändern lassen.
+                </p>
+                <p>
+                    Es folgt eine nähere Beschreibung, wie eine Löschung des Accounts und eine Änderung von Daten
+                    möglich
+                    sind.
+                </p>
+                <p>
+                    Die Registrierung dient zum Abschluss eines Vertrages mit dem Nutzer:
+                </p>
+                <p>
+                    Sind die Daten zur Erfüllung eines Vertrages oder zur Durchführung vorvertraglicher Maßnahmen
+                    erforderlich,
+                    ist eine vorzeitige Löschung der Daten nur möglich, soweit nicht vertragliche oder gesetzliche
+                    Verpflichtungen einer Löschung entgegenstehen.
+                </p>
+                <p>
+                    VIII. Kontaktformular und E-Mail-Kontakt
+                </p>
+                <p>
+                    1. Beschreibung und Umfang der Datenverarbeitung
+                </p>
+                <p>
+                    Auf unserer Internetseite ist ein Kontaktformular vorhanden, welches für die elektronische
+                    Kontaktaufnahme
+                    genutzt werden kann. Nimmt ein Nutzer diese Möglichkeit wahr, so werden die in der Eingabemaske
+                    eingegeben
+                    Daten an uns übermittelt und gespeichert. Diese Daten sind:
+                </p>
+                <p>
+                    Es folgt eine Auflistung der Daten der Eingabemaske
+                </p>
+                <p>
+                    Im Zeitpunkt der Absendung der Nachricht werden zudem folgende Daten gespeichert:
+                </p>
+                <p>
+                    Es folgt eine Auflistung der entsprechenden Daten. Beispiele können sein:
+                    (1) Die IP-Adresse des Nutzers
+                    (2) Datum und Uhrzeit der Registrierung
+                    Für die Verarbeitung der Daten wird im Rahmen des Absendevorgangs Ihre Einwilligung eingeholt und
+                    auf
+                    diese
+                    Datenschutzerklärung verwiesen.
+                </p>
+                <p>
+                    Alternativ ist eine Kontaktaufnahme über die bereitgestellte E-Mail-Adresse möglich. In diesem Fall
+                    werden
+                    die mit der E-Mail übermittelten personenbezogenen Daten des Nutzers gespeichert.
+                </p>
+                <p>
+                    Es erfolgt in diesem Zusammenhang keine Weitergabe der Daten an Dritte. Die Daten werden
+                    ausschließlich
+                    für
+                    die Verarbeitung der Konversation verwendet.
+                </p>
+                <p>
+                    2. Rechtsgrundlage für die Datenverarbeitung
+                </p>
+                <p>
+                    Rechtsgrundlage für die Verarbeitung der Daten ist bei Vorliegen einer Einwilligung des Nutzers Art.
+                    6
+                    Abs.
+                    1 lit. a DSGVO.
+                </p>
+                <p>
+                    Rechtsgrundlage für die Verarbeitung der Daten, die im Zuge einer Übersendung einer E-Mail
+                    übermittelt
+                    werden, ist Art. 6 Abs. 1 lit. f DSGVO. Zielt der E-Mail-Kontakt auf den Abschluss eines Vertrages
+                    ab,
+                    so
+                    ist zusätzliche Rechtsgrundlage für die Verarbeitung Art. 6 Abs. 1 lit. b DSGVO.
+                </p>
+                <p>
+                    3. Zweck der Datenverarbeitung
+                </p>
+                <p>
+                    Die Verarbeitung der personenbezogenen Daten aus der Eingabemaske dient uns allein zur Bearbeitung
+                    der
+                    Kontaktaufnahme. Im Falle einer Kontaktaufnahme per E-Mail liegt hieran auch das erforderliche
+                    berechtigte
+                    Interesse an der Verarbeitung der Daten.
+                </p>
+                <p>
+                    Die sonstigen während des Absendevorgangs verarbeiteten personenbezogenen Daten dienen dazu, einen
+                    Missbrauch des Kontaktformulars zu verhindern und die Sicherheit unserer informationstechnischen
+                    Systeme
+                    sicherzustellen.
+                </p>
+                <p>
+                    4. Dauer der Speicherung
+                </p>
+                <p>
+                    Die Daten werden gelöscht, sobald sie für die Erreichung des Zweckes ihrer Erhebung nicht mehr
+                    erforderlich
+                    sind. Für die personenbezogenen Daten aus der Eingabemaske des Kontaktformulars und diejenigen, die
+                    per
+                    E-Mail übersandt wurden, ist dies dann der Fall, wenn die jeweilige Konversation mit dem Nutzer
+                    beendet
+                    ist.
+                    Beendet ist die Konversation dann, wenn sich aus den Umständen entnehmen lässt, dass der betroffene
+                    Sachverhalt abschließend geklärt ist.
+                </p>
+                <p>
+                    Die während des Absendevorgangs zusätzlich erhobenen personenbezogenen Daten werden spätestens nach
+                    einer
+                    Frist von sieben Tagen gelöscht.
+                    5. Widerspruchs- und Beseitigungsmöglichkeit
+                    Der Nutzer hat jederzeit die Möglichkeit, seine Einwilligung zur Verarbeitung der personenbezogenen
+                    Daten zu
+                    widerrufen. Nimmt der Nutzer per E-Mail Kontakt mit uns auf, so kann er der Speicherung seiner
+                    personenbezogenen Daten jederzeit widersprechen. In einem solchen Fall kann die Konversation nicht
+                    fortgeführt werden.
+                </p>
+                <p>
+                    Es folgt eine Beschreibung, auf welche Weise der Widerruf der Einwilligung und der Widerspruch der
+                    Speicherung ermöglicht wird.
+                </p>
+                <p>
+                    Alle personenbezogenen Daten, die im Zuge der Kontaktaufnahme gespeichert wurden, werden in diesem
+                    Fall
+                    gelöscht.
+                </p>
+                <p>
+                    1. Umfang der Verarbeitung personenbezogener Daten
+                </p>
+                <p>
+                    Wir nutzen auf unserer Website das Open-Source-Software-Tool Matomo (ehemals PIWIK) zur Analyse des
+                    Surfverhaltens unserer Nutzer. Die Software setzt ein Cookie auf dem Rechner der Nutzer (zu Cookies
+                    siehe
+                    bereits oben). Werden Einzelseiten unserer Website aufgerufen, so werden folgende Daten gespeichert:
+                    (1) Zwei Bytes der IP-Adresse des aufrufenden Systems des Nutzers
+                    (2) Die aufgerufene Webseite
+                    (3) Die Website, von der der Nutzer auf die aufgerufene Webseite gelangt ist (Referrer)
+                    (4) Die Unterseiten, die von der aufgerufenen Webseite aus aufgerufen werden
+                    (5) Die Verweildauer auf der Webseite
+                    (6) Die Häufigkeit des Aufrufs der Webseite
+                    Die Software läuft dabei ausschließlich auf den Servern unserer Webseite. Eine Speicherung der
+                    personenbezogenen Daten der Nutzer findet nur dort statt. Eine Weitergabe der Daten an Dritte
+                    erfolgt
+                    nicht.
+                </p>
+                <p>
+                    2. Rechtsgrundlage für die Verarbeitung personenbezogener Daten
+                    Rechtsgrundlage für die Verarbeitung der personenbezogenen Daten der Nutzer ist Art. 6 Abs. 1 lit. f
+                    DSGVO.
+                </p>
+                <p>
+                    3. Zweck der Datenverarbeitung
+                </p>
+                <p>
+                    Die Verarbeitung der personenbezogenen Daten der Nutzer ermöglicht uns eine Analyse des
+                    Surfverhaltens
+                    unserer Nutzer. Wir sind durch die Auswertung der gewonnenen Daten in der Lage, Informationen über
+                    die
+                    Nutzung der einzelnen Komponenten unserer Webseite zusammenzustellen. Dies hilft uns dabei unsere
+                    Webseite
+                    und deren Nutzerfreundlichkeit stetig zu verbessern. In diesen Zwecken liegt auch unser berechtigtes
+                    Interesse in der Verarbeitung der Daten nach Art. 6 Abs. 1 lit. f DSGVO. Durch die Anonymisierung
+                    der
+                    IP-Adresse wird dem Interesse der Nutzer an deren Schutz personenbezogener Daten hinreichend
+                    Rechnung
+                    getragen.
+                </p>
+                <p>
+                    4. Dauer der Speicherung
+                </p>
+                <p>
+                    Die Daten werden gelöscht, sobald sie für unsere Aufzeichnungszwecke nicht mehr benötigt werden.
+                </p>
+                <p>
+                    In unserem Fall ist dies nach xx der Fall.
+                </p>
+                <p>
+                    5. Widerspruchs- und Beseitigungsmöglichkeit
+                </p>
+                <p>
+                    Cookies werden auf dem Rechner des Nutzers gespeichert und von diesem an unserer Seite übermittelt.
+                    Daher
+                    haben Sie als Nutzer auch die volle Kontrolle über die Verwendung von Cookies. Durch eine Änderung
+                    der
+                    Einstellungen in Ihrem Internetbrowser können Sie die Speicherung von Cookies deaktivieren oder
+                    einschränken. Bereits gespeicherte Cookies können jederzeit gelöscht werden. Dies kann auch
+                    automatisiert
+                    erfolgen. Werden Cookies für unsere Website deaktiviert, können möglicherweise nicht mehr alle
+                    Funktionen
+                    der Website vollumfänglich genutzt werden.
+                </p>
+                <p>
+                    X. Rechte der betroffenen Person
+                    Die folgende Auflistung umfasst alle Rechte der Betroffenen nach der DSGVO. Rechte, die für die
+                    eigene
+                    Webseite keine Relevanz haben, müssen nicht genannt werden. Insoweit kann die Auflistung gekürzt
+                    werden.
+                    Werden personenbezogene Daten von Ihnen verarbeitet, sind Sie Betroffener i.S.d. DSGVO und es stehen
+                    Ihnen
+                    folgende Rechte gegenüber dem Verantwortlichen zu:
+                </p>
+                <p>
+                    1. Auskunftsrecht
+                </p>
+                <p>
+                    Sie können von dem Verantwortlichen eine Bestätigung darüber verlangen, ob personenbezogene Daten,
+                    die
+                    Sie
+                    betreffen, von uns verarbeitet werden.
+                    Liegt eine solche Verarbeitung vor, können Sie von dem Verantwortlichen über folgende Informationen
+                    Auskunft
+                    verlangen:
+                    (1) die Zwecke, zu denen die personenbezogenen Daten verarbeitet werden;
+                    (2) die Kategorien von personenbezogenen Daten, welche verarbeitet werden;
+                    (3) die Empfänger bzw. die Kategorien von Empfängern, gegenüber denen die Sie betreffenden
+                    personenbezogenen
+                    Daten offengelegt wurden oder noch offengelegt werden;
+                    (4) die geplante Dauer der Speicherung der Sie betreffenden personenbezogenen Daten oder, falls
+                    konkrete
+                    Angaben hierzu nicht möglich sind, Kriterien für die Festlegung der Speicherdauer;
+                    (5) das Bestehen eines Rechts auf Berichtigung oder Löschung der Sie betreffenden personenbezogenen
+                    Daten,
+                    eines Rechts auf Einschränkung der Verarbeitung durch den Verantwortlichen oder eines
+                    Widerspruchsrechts
+                    gegen diese Verarbeitung;
+                    (6) das Bestehen eines Beschwerderechts bei einer Aufsichtsbehörde;
+                    (7) alle verfügbaren Informationen über die Herkunft der Daten, wenn die personenbezogenen Daten
+                    nicht
+                    bei
+                    der betroffenen Person erhoben werden;
+                    (8) das Bestehen einer automatisierten Entscheidungsfindung einschließlich Profiling gemäß Art. 22
+                    Abs.
+                    1
+                    und 4 DSGVO und zumindest in diesen Fällen aussagekräftige Informationen über die involvierte Logik
+                    sowie die Tragweite und die angestrebten Auswirkungen einer derartigen Verarbeitung für die
+                    betroffene
+                    Person.
+                    Ihnen steht das Recht zu, Auskunft darüber zu verlangen, ob die Sie betreffenden personenbezogenen
+                    Daten
+                    in
+                    ein Drittland oder an eine internationale Organisation übermittelt werden. In diesem Zusammenhang
+                    können
+                    Sie
+                    verlangen, über die geeigneten Garantien gem. Art. 46 DSGVO im Zusammenhang mit der Übermittlung
+                    unterrichtet zu werden.
+                    Bei einer Datenverarbeitung zu wissenschaftlichen, historischen oder statistischen
+                    Forschungszwecken:
+                    Dieses Auskunftsrecht kann insoweit beschränkt werden, als es voraussichtlich die Verwirklichung der
+                    Forschungs- oder Statistikzwecke unmöglich macht oder ernsthaft beeinträchtigt und die Beschränkung
+                    für
+                    die
+                    Erfüllung der Forschungs- oder Statistikzwecke notwendig ist.
+                </p>
+                <p>
+                    2. Recht auf Berichtigung
+                </p>
+                <p>
+                    Sie haben ein Recht auf Berichtigung und/oder Vervollständigung gegenüber dem Verantwortlichen,
+                    sofern
+                    die
+                    verarbeiteten personenbezogenen Daten, die Sie betreffen, unrichtig oder unvollständig sind. Der
+                    Verantwortliche hat die Berichtigung unverzüglich vorzunehmen.
+                    Bei Datenverarbeitung zu wissenschaftlichen, historischen oder statistischen Forschungszwecken:
+                    Ihr Recht auf Berichtigung kann insoweit beschränkt werden, als es voraussichtlich die
+                    Verwirklichung
+                    der
+                    Forschungs- oder Statistikzwecke unmöglich macht oder ernsthaft beeinträchtigt und die Beschränkung
+                    für
+                    die
+                    Erfüllung der Forschungs- oder Statistikzwecke notwendig ist.
+                </p>
+                <p>
+                    3. Recht auf Einschränkung der Verarbeitung
+                </p>
+                <p>
+                    Unter den folgenden Voraussetzungen können Sie die Einschränkung der Verarbeitung der Sie
+                    betreffenden
+                    personenbezogenen Daten verlangen:
+                    (1) wenn Sie die Richtigkeit der Sie betreffenden personenbezogenen für eine Dauer bestreiten, die
+                    es
+                    dem
+                    Verantwortlichen ermöglicht, die Richtigkeit der personenbezogenen Daten zu überprüfen;
+                    (2) die Verarbeitung unrechtmäßig ist und Sie die Löschung der personenbezogenen Daten ablehnen und
+                    stattdessen die Einschränkung der Nutzung der personenbezogenen Daten verlangen;
+                    (3) der Verantwortliche die personenbezogenen Daten für die Zwecke der Verarbeitung nicht länger
+                    benötigt,
+                    Sie diese jedoch zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen benötigen, oder
+                    (4) wenn Sie Widerspruch gegen die Verarbeitung gemäß Art. 21 Abs. 1 DSGVO eingelegt haben und noch
+                    nicht
+                    feststeht, ob die berechtigten Gründe des Verantwortlichen gegenüber Ihren Gründen überwiegen.
+                    Wurde die Verarbeitung der Sie betreffenden personenbezogenen Daten eingeschränkt, dürfen diese
+                    Daten –
+                    von
+                    ihrer Speicherung abgesehen – nur mit Ihrer Einwilligung oder zur Geltendmachung, Ausübung oder
+                    Verteidigung
+                    von Rechtsansprüchen oder zum Schutz der Rechte einer anderen natürlichen oder juristischen Person
+                    oder
+                    aus
+                    Gründen eines wichtigen öffentlichen Interesses der Union oder eines Mitgliedstaats verarbeitet
+                    werden.
+                    Wurde die Einschränkung der Verarbeitung nach den o.g. Voraussetzungen eingeschränkt, werden Sie von
+                    dem
+                    Verantwortlichen unterrichtet bevor die Einschränkung aufgehoben wird.
+                    Bei Datenverarbeitung zu wissenschaftlichen, historischen oder statistischen Forschungszwecken:
+                    Ihr Recht auf Einschränkung der Verarbeitung kann insoweit beschränkt werden, als es voraussichtlich
+                    die
+                    Verwirklichung der Forschungs- oder Statistikzwecke unmöglich macht oder ernsthaft beeinträchtigt
+                    und
+                    die
+                    Beschränkung für die Erfüllung der Forschungs- oder Statistikzwecke notwendig ist.
+                </p>
+                <p>
+                    4. Recht auf Löschung
+                </p>
+                <p>
+                    a) Löschungspflicht
+                </p>
+                <p>
+                    Sie können von dem Verantwortlichen verlangen, dass die Sie betreffenden personenbezogenen Daten
+                    unverzüglich gelöscht werden, und der Verantwortliche ist verpflichtet, diese Daten unverzüglich zu
+                    löschen,
+                    sofern einer der folgenden Gründe zutrifft:
+                    (1) Die Sie betreffenden personenbezogenen Daten sind für die Zwecke, für die sie erhoben oder auf
+                    sonstige
+                    Weise verarbeitet wurden, nicht mehr notwendig.
+                    (2) Sie widerrufen Ihre Einwilligung, auf die sich die Verarbeitung gem. Art. 6 Abs. 1 lit. a oder
+                    Art.
+                    9
+                    Abs. 2 lit. a DSGVO stützte, und es fehlt an einer anderweitigen Rechtsgrundlage für die
+                    Verarbeitung.
+                    (3) Sie legen gem. Art. 21 Abs. 1 DSGVO Widerspruch gegen die Verarbeitung ein und es liegen keine
+                    vorrangigen berechtigten Gründe für die Verarbeitung vor, oder Sie legen gem. Art. 21 Abs. 2 DSGVO
+                    Widerspruch gegen die Verarbeitung ein.
+                    (4) Die Sie betreffenden personenbezogenen Daten wurden unrechtmäßig verarbeitet.
+                    (5) Die Löschung der Sie betreffenden personenbezogenen Daten ist zur Erfüllung einer rechtlichen
+                    Verpflichtung nach dem Unionsrecht oder dem Recht der Mitgliedstaaten erforderlich, dem der
+                    Verantwortliche
+                    unterliegt.
+                    (6) Die Sie betreffenden personenbezogenen Daten wurden in Bezug auf angebotene Dienste der
+                    Informationsgesellschaft gemäß Art. 8 Abs. 1 DSGVO erhoben.
+                </p>
+                <p>
+                    b) Information an Dritte
+                </p>
+                <p>
+                    Hat der Verantwortliche die Sie betreffenden personenbezogenen Daten öffentlich gemacht und ist er
+                    gem.
+                    Art.
+                    17 Abs. 1 DSGVO zu deren Löschung verpflichtet, so trifft er unter Berücksichtigung der verfügbaren
+                    Technologie und der Implementierungskosten angemessene Maßnahmen, auch technischer Art, um für die
+                    Datenverarbeitung Verantwortliche, die die personenbezogenen Daten verarbeiten, darüber zu
+                    informieren,
+                    dass
+                    Sie als betroffene Person von ihnen die Löschung aller Links zu diesen personenbezogenen Daten oder
+                    von
+                    Kopien oder Replikationen dieser personenbezogenen Daten verlangt haben.
+                </p>
+                <p>
+                    c) Ausnahmen
+                </p>
+                <p>
+                    Das Recht auf Löschung besteht nicht, soweit die Verarbeitung erforderlich ist
+                    (1) zur Ausübung des Rechts auf freie Meinungsäußerung und Information;
+                    (2) zur Erfüllung einer rechtlichen Verpflichtung, die die Verarbeitung nach dem Recht der Union
+                    oder
+                    der
+                    Mitgliedstaaten, dem der Verantwortliche unterliegt, erfordert, oder zur Wahrnehmung einer Aufgabe,
+                    die
+                    im
+                    öffentlichen Interesse liegt oder in Ausübung öffentlicher Gewalt erfolgt, die dem Verantwortlichen
+                    übertragen wurde;
+                    (3) aus Gründen des öffentlichen Interesses im Bereich der öffentlichen Gesundheit gemäß Art. 9 Abs.
+                    2
+                    lit.
+                    h und i sowie Art. 9 Abs. 3 DSGVO;
+                    (4) für im öffentlichen Interesse liegende Archivzwecke, wissenschaftliche oder historische
+                    Forschungszwecke
+                    oder für statistische Zwecke gem. Art. 89 Abs. 1 DSGVO, soweit das unter Abschnitt a) genannte Recht
+                    voraussichtlich die Verwirklichung der Ziele dieser Verarbeitung unmöglich macht oder ernsthaft
+                    beeinträchtigt, oder
+                    (5) zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.
+                    5. Recht auf Unterrichtung
+                    Haben Sie das Recht auf Berichtigung, Löschung oder Einschränkung der Verarbeitung gegenüber dem
+                    Verantwortlichen geltend gemacht, ist dieser verpflichtet, allen Empfängern, denen die Sie
+                    betreffenden
+                    personenbezogenen Daten offengelegt wurden, diese Berichtigung oder Löschung der Daten oder
+                    Einschränkung
+                    der Verarbeitung mitzuteilen, es sei denn, dies erweist sich als unmöglich oder ist mit einem
+                    unverhältnismäßigen Aufwand verbunden.
+                    Ihnen steht gegenüber dem Verantwortlichen das Recht zu, über diese Empfänger unterrichtet zu
+                    werden.
+                    6. Recht auf Datenübertragbarkeit
+                    Sie haben das Recht, die Sie betreffenden personenbezogenen Daten, die Sie dem Verantwortlichen
+                    bereitgestellt haben, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten.
+                    Außerdem
+                    haben Sie das Recht diese Daten einem anderen Verantwortlichen ohne Behinderung durch den
+                    Verantwortlichen,
+                    dem die personenbezogenen Daten bereitgestellt wurden, zu übermitteln, sofern
+                    (1) die Verarbeitung auf einer Einwilligung gem. Art. 6 Abs. 1 lit. a DSGVO oder Art. 9 Abs. 2 lit.
+                    a
+                    DSGVO
+                    oder auf einem Vertrag gem. Art. 6 Abs. 1 lit. b DSGVO beruht und
+                    (2) die Verarbeitung mithilfe automatisierter Verfahren erfolgt.
+                    In Ausübung dieses Rechts haben Sie ferner das Recht, zu erwirken, dass die Sie betreffenden
+                    personenbezogenen Daten direkt von einem Verantwortlichen einem anderen Verantwortlichen übermittelt
+                    werden,
+                    soweit dies technisch machbar ist. Freiheiten und Rechte anderer Personen dürfen hierdurch nicht
+                    beeinträchtigt werden.
+                    Das Recht auf Datenübertragbarkeit gilt nicht für eine Verarbeitung personenbezogener Daten, die für
+                    die
+                    Wahrnehmung einer Aufgabe erforderlich ist, die im öffentlichen Interesse liegt oder in Ausübung
+                    öffentlicher Gewalt erfolgt, die dem Verantwortlichen übertragen wurde.
+                </p>
+                <p>
+                    7. Widerspruchsrecht
+                </p>
+                <p>
+                    Sie haben das Recht, aus Gründen, die sich aus ihrer besonderen Situation ergeben, jederzeit gegen
+                    die
+                    Verarbeitung der Sie betreffenden personenbezogenen Daten, die aufgrund von Art. 6 Abs. 1 lit. e
+                    oder f
+                    DSGVO erfolgt, Widerspruch einzulegen; dies gilt auch für ein auf diese Bestimmungen gestütztes
+                    Profiling.
+                    Der Verantwortliche verarbeitet die Sie betreffenden personenbezogenen Daten nicht mehr, es sei
+                    denn, er
+                    kann zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die Ihre Interessen, Rechte und
+                    Freiheiten überwiegen, oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung
+                    von
+                    Rechtsansprüchen.
+                    Werden die Sie betreffenden personenbezogenen Daten verarbeitet, um Direktwerbung zu betreiben,
+                    haben
+                    Sie
+                    das Recht, jederzeit Widerspruch gegen die Verarbeitung der Sie betreffenden personenbezogenen Daten
+                    zum
+                    Zwecke derartiger Werbung einzulegen; dies gilt auch für das Profiling, soweit es mit solcher
+                    Direktwerbung
+                    in Verbindung steht.
+                    Widersprechen Sie der Verarbeitung für Zwecke der Direktwerbung, so werden die Sie betreffenden
+                    personenbezogenen Daten nicht mehr für diese Zwecke verarbeitet.
+                    Sie haben die Möglichkeit, im Zusammenhang mit der Nutzung von Diensten der Informationsgesellschaft
+                    –
+                    ungeachtet der Richtlinie 2002/58/EG – Ihr Widerspruchsrecht mittels automatisierter Verfahren
+                    auszuüben,
+                    bei denen technische Spezifikationen verwendet werden.
+                    Bei Datenverarbeitung zu wissenschaftlichen, historischen oder statistischen Forschungszwecken:
+                    Sie haben auch das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, bei der
+                    Verarbeitung
+                    Sie betreffender personenbezogener Daten, die zu wissenschaftlichen oder historischen
+                    Forschungszwecken
+                    oder
+                    zu statistischen Zwecken gem. Art. 89 Abs. 1 DSGVO erfolgt, dieser zu widersprechen.
+                    Ihr Widerspruchsrecht kann insoweit beschränkt werden, als es voraussichtlich die Verwirklichung der
+                    Forschungs- oder Statistikzwecke unmöglich macht oder ernsthaft beeinträchtigt und die Beschränkung
+                    für
+                    die
+                    Erfüllung der Forschungs- oder Statistikzwecke notwendig ist.
+                </p>
+                <p>
+                    8. Recht auf Widerruf der datenschutzrechtlichen Einwilligungserklärung
+                </p>
+                <p>
+                    Sie haben das Recht, Ihre datenschutzrechtliche Einwilligungserklärung jederzeit zu widerrufen.
+                    Durch
+                    den
+                    Widerruf der Einwilligung wird die Rechtmäßigkeit der aufgrund der Einwilligung bis zum Widerruf
+                    erfolgten
+                    Verarbeitung nicht berührt.
+                </p>
+                <p>
+                    9. Automatisierte Entscheidung im Einzelfall einschließlich Profiling
+                </p>
+                <p>
+                    Sie haben das Recht, nicht einer ausschließlich auf einer automatisierten Verarbeitung –
+                    einschließlich
+                    Profiling – beruhenden Entscheidung unterworfen zu werden, die Ihnen gegenüber rechtliche Wirkung
+                    entfaltet
+                    oder Sie in ähnlicher Weise erheblich beeinträchtigt. Dies gilt nicht, wenn die Entscheidung
+                    (1) für den Abschluss oder die Erfüllung eines Vertrags zwischen Ihnen und dem Verantwortlichen
+                    erforderlich
+                    ist,
+                    2) aufgrund von Rechtsvorschriften der Union oder der Mitgliedstaaten, denen der Verantwortliche
+                    unterliegt, zulässig ist und diese Rechtsvorschriften angemessene Maßnahmen zur Wahrung Ihrer Rechte
+                    und
+                    Freiheiten sowie Ihrer berechtigten Interessen enthalten oder
+                    (3) mit Ihrer ausdrücklichen Einwilligung erfolgt.
+                    Allerdings dürfen diese Entscheidungen nicht auf besonderen Kategorien personenbezogener Daten nach
+                    Art.
+                    9
+                    Abs. 1 DSGVO beruhen, sofern nicht Art. 9 Abs. 2 lit. a oder g DSGVO gilt und angemessene Maßnahmen
+                    zum
+                    Schutz der Rechte und Freiheiten sowie Ihrer berechtigten Interessen getroffen wurden.
+                    Hinsichtlich der in (1) und (3) genannten Fälle trifft der Verantwortliche angemessene Maßnahmen, um
+                    die
+                    Rechte und Freiheiten sowie Ihre berechtigten Interessen zu wahren, wozu mindestens das Recht auf
+                    Erwirkung
+                    des Eingreifens einer Person seitens des Verantwortlichen, auf Darlegung des eigenen Standpunkts und
+                    auf
+                    Anfechtung der Entscheidung gehört.
+                </p>
+                <p>
+                    10. Recht auf Beschwerde bei einer Aufsichtsbehörde
+                </p>
+                <p>
+                    Unbeschadet eines anderweitigen verwaltungsrechtlichen oder gerichtlichen Rechtsbehelfs steht Ihnen
+                    das
+                    Recht auf Beschwerde bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres
+                    Aufenthaltsorts,
+                    ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes, zu, wenn Sie der Ansicht sind, dass
+                    die
+                    Verarbeitung der Sie betreffenden personenbezogenen Daten gegen die DSGVO verstößt.
+                    Die Aufsichtsbehörde, bei der die Beschwerde eingereicht wurde, unterrichtet den Beschwerdeführer
+                    über
+                    den
+                    Stand und die Ergebnisse der Beschwerde einschließlich der Möglichkeit eines gerichtlichen
+                    Rechtsbehelfs
+                    nach Art. 78 DSGVO.
+                </p>
+            </div>
+        </div>
+    </main>
+    <!--Ende Seiteninhalt und Start Fußleiste-->
+
+    <!--Ende Seiteninhalt und Start Fußleiste-->
+    <div class="container-fluid bg-body-secondary">
+        <footer class="align-items-start pb-2 mt-auto">
+            <div class="row">
+                <p class="col-4 mt-2 text-body-secondary">© 2024 CaringCloak</p>
+                <ul class="col-8 nav justify-content-end">
+                    <li class="nav-item"><a href="/pages/datenschutz.html"
+                            class="nav-link px-2 text-body-secondary">Datenschutz</a></li>
+                    <li class="nav-item"><a href="/pages/agb.html"
+                            class="nav-link px-2 text-body-secondary">AGB</a>
+                    </li>
+                    <li class="nav-item"><a href="/pages/impressum.html"
+                            class="nav-link px-2 text-body-secondary">Impressum</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a class="col-4 my-3 mx-1 footer__social-media-link" href="#" target="_blank" rel="noopener"
+                        title="Facebook Account"><img src="/images/instagram.svg" width="24" height="24"
+                            alt="Facebook Icon"></a>
+                    <a class="col-4 my-3 mx-1 footer__social-media-link" href="#" target="_blank" rel="noopener"
+                        title="X Account"><img src="/images/facebook.svg" width="24" height="24"
+                            alt="X Icon"></a>
+                    <a class="col-4 my-3 mx-1 footer__social-media-link" href="#" target="_blank" rel="noopener"
+                        title="Instagram Account"><img src="/images/twitter-x.svg" width="24" height="24"
+                            alt="Instragram Icon"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
+</body>
+
+</html>
