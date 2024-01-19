@@ -1,9 +1,9 @@
 {
   "name": "ipwa01-01",
   "private": true,
-  "version": "1.0.1",
+  "version": "0.0.0",
   "type": "module",
-  "homepage": "https://a-gruber-iu.github.io/IPWA01-01/"
+  "homepage": "https://{username}.github.io/{repo-name}/",
   "scripts": {
     "dev": "vite --open --port 3000",
     "build": "vite build",
