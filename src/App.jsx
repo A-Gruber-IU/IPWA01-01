@@ -13,7 +13,7 @@ export default function App() {
 
   if (bestaetigung == null) {
     return (
-      <EingabePLZ bestaetigung={bestaetigung} handleBestaetigung={handleBestaetigung} />
+      <EingabePLZ handleBestaetigung={handleBestaetigung} />
     );
   } else {
     return (
