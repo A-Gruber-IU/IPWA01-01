@@ -20,8 +20,8 @@ export default function NeuesTeil({ kleiderNr }) {
                             <option value="Pullover">Pullover</option>
                             <option value="Schuhe">Schuhe</option>
                             <option value="Kopfbedeckung">Mütze/Basecap/Hut</option>
-                            <option value="Kleid">Mütze/Basecap/Hut</option>
-                            <option value="Rock">Mütze/Basecap/Hut</option>
+                            <option value="Kleid">Kleid</option>
+                            <option value="Rock">Rock</option>
                             <option value="Sonstiges">Sonstiges</option>
                         </select>
                     </label>
