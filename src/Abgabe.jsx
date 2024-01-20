@@ -99,7 +99,7 @@ export default function Abgabe({ handleBestaetigung }) {
                             Wo soll deine Spende hingehen? &nbsp; <select className="btn text-black bg-secondary-subtle" name="Auswahl Krisengebiet" id="auswahlGebiet" value={form.gebiet} onChange={(e) => { setForm({ ...form, gebiet: e.target.value, }); }} required>
                                 <option disabled value="">Bitte wähle ein Krisengebiet...</option>
                                 <option value="Jemen">Jemen</option>
-                                <option value="Lybien">Lybien</option>
+                                <option value="Libyen">Lybien</option>
                                 <option value="Ukraine">Ukraine</option>
                                 <option value="Sudan">Sudan</option>
                                 <option value="Somalia">Somalia</option>

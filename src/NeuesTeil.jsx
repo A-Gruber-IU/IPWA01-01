@@ -14,12 +14,14 @@ export default function NeuesTeil({ kleiderNr }) {
                         Art des Kleidungsstücks? &nbsp; <select className="btn text-black bg-secondary-subtle" name={`Auswahl Kleiderart ${kleiderNr}`} id={`kleiderArt${kleiderNr}`} value={kleiderArt}  onChange={(e) => { setKleiderArt(e.target.value); }} required>
                             <option disabled value="">Bitte wähle die Art des Kleidungsstücks...</option>
                             <option value="Hose">Hose</option>
-                            <option value="Hemd">Hemd/Blouse</option>
+                            <option value="Hemd/Bluse">Hemd/Bluse</option>
                             <option value="Shirt">T-Shirt/Top</option>
                             <option value="Jacke">Jacke</option>
                             <option value="Pullover">Pullover</option>
                             <option value="Schuhe">Schuhe</option>
                             <option value="Kopfbedeckung">Mütze/Basecap/Hut</option>
+                            <option value="Kleid">Mütze/Basecap/Hut</option>
+                            <option value="Rock">Mütze/Basecap/Hut</option>
                             <option value="Sonstiges">Sonstiges</option>
                         </select>
                     </label>

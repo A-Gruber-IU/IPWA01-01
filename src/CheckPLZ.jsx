@@ -60,7 +60,7 @@ export default function CheckPLZ({ plz, fehler, ort, handleBestaetigung }) {
                     <Card>
                         <Card.Header as="h5" className="bg-success text-bg-success">Alles im grünen Bereich!</Card.Header>
                         <Card.Body className="bg-light text-bg-light">
-                            <Card.Text>Der angegebene Ort liegt im Einzugsgebiet für Sammelaktion. Du hast die Wahl: entweder registrierst du deine Kleiderspende hier zur Abholung oder du gibst sie an der Geschäftstelle ab, wo sie auch registriert werden können.</Card.Text>
+                            <Card.Text>Der angegebene Ort liegt im Einzugsgebiet unserer Sammelaktion. Du hast die Wahl: entweder registrierst du deine Kleiderspende hier zur Abholung oder du gibst sie an der Geschäftstelle ab, wo sie auch registriert werden kann.</Card.Text>
                         </Card.Body>
                     </Card>
                 </Col>
