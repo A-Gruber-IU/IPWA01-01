@@ -10,7 +10,7 @@ export default function EingabePLZ({handleBestaetigung}) {
   useEffect(() => {
     async function ortsDaten(plz) {
       try {
-        if (plz != null) {
+        if (String(plz).length == 5) {
           const response = await fetch('https://openplzapi.org/de/Localities?postalCode=' + plz);
           if (!response.ok) {
             throw new Error('Keine Daten für diese PLZ gefunden');
