@@ -18,7 +18,7 @@ export default function Abgabe({ handleBestaetigung }) {
 
     function neuesKleiderstueck(event) {
         event.preventDefault(); // Verhindert das Neuladen der Seite
-        if (kleiderArray.length < 101) {
+        if (kleiderArray.length < 501) {
             setKleiderArray(kleiderArray => [...kleiderArray, kleiderArray.length]); // Aktuelle Länge des Arrays wird als Wert für neues Element hinzugefügt
         }
         else if (kleiderArray.length > 500) {
