@@ -8,7 +8,7 @@ export default function CheckPLZ({ plz, fehler, ort, handleBestaetigung }) {
     const [selectedValue, setSelectedValue,] = useState("abholungX");
     const handleRadioChange = (value) => { setSelectedValue(value); };
 
-    if ((plz > 99999) || (String(plz).length < 5) || (plz < 1)) {
+    if ((String(plz).length != 5) || (plz < 1)) {
         return (
             <Col xs={10} className="mx-3 mb-3">
                 <Card>
