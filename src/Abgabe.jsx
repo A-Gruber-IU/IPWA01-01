@@ -74,7 +74,7 @@ export default function Abgabe({ handleBestaetigung }) {
 
     return (
         <Container className="pe-5">
-            <h4 className="my-4">Hier kannst du deine Kleider zur Abgabe an der Geschäftstelle registrieren.</h4>
+            <h4 className="my-4">Hier werden deine Kleider zur Abgabe an der Geschäftstelle registriert.</h4>
             <form name="Spenden_Registrierung" id="spendenReg">
                 <Row>
                     <Col className="align-self-end">
